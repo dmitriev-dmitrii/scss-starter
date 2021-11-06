@@ -1,0 +1,73 @@
+
+
+
+html{
+
+	--bg-color1: #ffffff;
+	--bg-color2: #f1f3f5;
+
+	
+	--main-text-color: #666;
+
+	--title-text-color: #2d2d2d;
+
+	--link-text-color: #2d9cdb;
+
+	--main-accent-color: #1e90ff;
+	--minor-accent-color: #37f093;
+
+	--lg: linear-gradient(to right, var(--main-accent-color), var(--minor-accent-color) 66%, var(--main-accent-color));
+
+}
+
+html[data-darck-theme="true"] {
+
+	--bg-color1: #111111;
+	--bg-color2: rgba(0, 0, 0, 0.1);
+
+	--main-text-color: #c9d1d9;
+
+	--title-text-color: #f0f6fc;
+
+	--link-text-color: #2d9cdb;
+	
+	--main-accent-color: rgb(30, 144, 255);
+	--minor-accent-color: rgb(55, 240, 147);
+
+	--lg: linear-gradient(to right, rgba(45, 155, 219, 0.8), var(--minor-accent-color) 66%, rgba(51, 198, 239, 0.8));
+	// --lg: linear-gradient(to right, rgba(var(--main-accent-color), 10%) , var(--minor-accent-color) 66%, rgba(var(--main-accent-color), 10%));
+
+img{
+	opacity: .9;
+}
+
+}
+
+// maxWidth-максимальная гирина контейнера по макету, так же используется в мексине для Font-Size
+$maxWidth: 1000;
+
+
+$loadingColor: #ff6a00;
+$succesColor: #39d353;
+$errorColor: #FF0033;
+
+$borderColor: #efefef;
+
+// дублирование переменных для удобства использования в scss
+$bgColor1: var(--bg-color1);
+$bgColor2: var(--bg-color2);
+
+$mainTxtColor: var(--main-text-color);
+
+$titleTxtColor: var(--title-text-color);
+
+$mainAccentColor: var(--main-accent-color);
+$minorAccentColor: var(--minor-accent-color);
+
+$linkTxtColor:  var(--link-text-color);
+
+$lg: var(--lg);
+
+
+
+
